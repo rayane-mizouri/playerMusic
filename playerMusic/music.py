@@ -78,12 +78,9 @@ def music_file():
                 music_list.insert('end', music)
     gui.after(5000, music_file)
 
-
-name_of_the_song =tkinter.Label(gui, text="", font=('Arial',15))
-name_of_the_song.grid(columnspan = 7, row =2)
-
+    
 buttonplay = Button(gui, image=play_image_button, command=play, font=('Arial', 15), height=80, width=60)
-buttonplay.grid(column=3, row=6,padx=2)
+buttonplay.grid(column=3, row=6,padx=2, pady=20)
 
 buttonpause = Button(gui, image=pause_image_button, command=pause, font=('Arial', 15), height=80, width=60)
 buttonpause.grid(column=4, row=6,padx=2)
